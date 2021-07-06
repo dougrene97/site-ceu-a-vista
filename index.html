@@ -1,0 +1,64 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!--Tag <link> para chamada de CSS externo-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--Tag <link> para chamada de fonte externa do Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Inicio | Céu a Vista</title>
+</head>
+<body vlink="#00008B" alink="#87CEEB" link="#FFFF00">
+    <header>
+        <img class="logo" src="imagens/logo.png">
+        <img class="logo2" src="imagens/astro2.jpg">
+        
+        <div id="progress-bar"><img src="imagens/astro.png" class="aste"></div>
+        <div class="menu">
+            <center><a class="destaque">Inicio</a></center>
+            <center><a href="q-somos.html" class="destaque">Quem Somos</a></center>
+            <center><a href="galer.html" class="destaque">Galeria</a></center>
+            <center><a href="contat.html" class="destaque">Contato</a></center>
+        </div>        
+    </header>
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/"><img class="ico-rede" src="imagens/ico-fac.bmp"></a>
+            <a href="#"><img class="ico-rede" src="imagens/ico-Wts.bmp"></a>
+            <a href="https://www.instagram.com/?hl=pt-br"><img class="ico-rede" src="imagens/ico-ins.bmp"></a>
+            <a href="https://twitter.com/login?lang=pt"><img class="ico-rede" src="imagens/ico-tiw.bmp"></a>
+        </div>
+    <div class="conteudo">
+        <div class="cont resp"><img class="mat" src="imagens/mat1.png"><a href="conteu1.html">Astronautas na ISS Irão Receber Um Novo Banheiro</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+        <div class="cont"><img class="mat" src="imagens/mat2.png"><a href="conteu2.html">Astrônomos Usam O VLBA E Fazem A Primeira Medida Direta de Distância Até Uma Magnetar</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+        <div class="cont"><img class="mat" src="imagens/mat3.png"><a href="conteu3.html">O Sol Oficialmente Entrou Em Um Novo Ciclo de Atividade – Bem-Vindos Ao Ciclo 25</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+        <div class="cont"><img class="mat" src="imagens/mat4.png"><a href="conteu4.html">Rússia Revela Imagens De Um Rebocador Espacial Nuclear</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+        <div class="cont"><img class="mat" src="imagens/mat5.png"><a href="conteu5.html">O Véu de Cygnus – Surfando Na Borda Da Onda de Choque De Uma Supernova</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+        <div class="cont"><img class="mat" src="imagens/mat6.png"><a href="conteu6.html">NGC 2442 – A Galáxia Em Forma de Gancho</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+        <div class="cont"><img class="mat" src="imagens/mat7.png"><a href="conteu7.html">Superfície Congelada do Satélite de Europa Sofre Uma Grande Deriva Polar</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+        <div class="cont"><img class="mat" src="imagens/mat8.png"><a href="conteu8.html">Astrônomos Descobrem Um Raro Netuno Quente Orbitando Uma Estrela Próxima</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+        <div class="cont"><img class="mat" src="imagens/mat9.png"><a href="conteu9.html">Pela Primeira Vez Algoritmo de Machine Learning Confirma A Existência de 50 Novos Exoplanetas</a><p style="font-size: 20px;">POR: CÉU A VISTA</p></div>
+    </div>
+    <hr/>
+    <footer>
+        <img class="logo3" src="imagens/logo.png">
+        <div class="dir-res">© 2020 Céu a Vista |  Todos os direitos reservados.</div>
+        <div class="redes-sociais-footer">
+            <a href="https://www.facebook.com/"><img class="ico-rede2" src="imagens/ico-fac.bmp"></a>
+            <a href="#"><img class="ico-rede2" src="imagens/ico-Wts.bmp"></a>
+            <a href="https://www.instagram.com/?hl=pt-br"><img class="ico-rede2" src="imagens/ico-ins.bmp"></a>
+            <a href="https://twitter.com/login?lang=pt"><img class="ico-rede2" src="imagens/ico-tiw.bmp"></a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let progress = document.getElementById('progress-bar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+//            progress.style.width = progressHeight + "%";
+            progress.style.left = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>

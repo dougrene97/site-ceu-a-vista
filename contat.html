@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!--Tag <link> para chamada de CSS externo-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--Tag <link> para chamada de fonte externa do Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Inicio | Fale Conosco</title>
+</head>
+<body vlink="#00008B" alink="#87CEEB" link="#FFFF00">
+    <header>
+        <img class="logo" src="imagens/logo.png">
+        <img class="logo2" src="imagens/astro2.jpg">
+
+        
+        <div id="progress-bar"><img src="imagens/astro.png" class="aste"></div>
+        <div class="menu">
+            <center><a href="index.html" class="destaque">Inicio</a></center>
+            <center><a href="q-somos.html" class="destaque">Quem Somos</a></center>
+            <center><a href="galer.html" class="destaque">Galeria</a></center>
+            <center><a class="destaque">Contato</a></center>
+        </div>
+        
+    </header>
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/"><img class="ico-rede" src="imagens/ico-fac.bmp"></a>
+            <a href="#"><img class="ico-rede" src="imagens/ico-Wts.bmp"></a>
+            <a href="https://www.instagram.com/?hl=pt-br"><img class="ico-rede" src="imagens/ico-ins.bmp"></a>
+            <a href="https://twitter.com/login?lang=pt"><img class="ico-rede" src="imagens/ico-tiw.bmp"></a>
+        </div>
+    <div class="conteudo">
+        <center><h1>Fale Conosco</h1></center>
+            <form method="post" style="padding-left: 25%">
+                <table border="0">
+                    <tr>
+                        <td width="120" align="right"><label for="nome">Nome:</label></td>
+                        <td width="20">&nbsp;</td>
+                        <td align="left"><input type="text" id="nome" size="35" maxlength="50" /></td>
+                     </tr>
+                    <tr>
+                        <td align="right"><label>E-mail:</label></td>
+                        <td>&nbsp;</td>
+                        <td><input type="email" id="email" size="35" maxlength="50" /></td>                    
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><label for="msg">Mensagem:</label></td>
+                        <td>&nbsp;</td>
+                        <td><textarea id="msg" rows="4" cols="37"></textarea></td>                    
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td align="right">
+                            <input type="submit" value="ENVIAR" />&nbsp;
+                            <input type="reset" value="APAGAR TUDO" />
+                        </td>
+                    </tr>
+                </table>
+        </form>
+         <p style="font-size: 12px; padding-left: 25%;">Este é um site de aprendizado educacional sem qualquer tipo de ganho, de caráter de instrução</p>
+    </div><br><br>
+    <center><p><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29407.963605851863!2d-46.989616892661836!3d-22.87662645151034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssousas!5e0!3m2!1spt-BR!2sbr!4v1601331044472!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p></center>
+    <hr/>
+    <footer>
+        <img class="logo3" src="imagens/logo.png">
+        <div class="dir-res">© 2020 Céu a Vista |  Todos os direitos reservados.</div>
+        <div class="redes-sociais-footer">
+            <a href="https://www.facebook.com/"><img class="ico-rede2" src="imagens/ico-fac.bmp"></a>
+            <a href="#"><img class="ico-rede2" src="imagens/ico-Wts.bmp"></a>
+            <a href="https://www.instagram.com/?hl=pt-br"><img class="ico-rede2" src="imagens/ico-ins.bmp"></a>
+            <a href="https://twitter.com/login?lang=pt"><img class="ico-rede2" src="imagens/ico-tiw.bmp"></a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let progress = document.getElementById('progress-bar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+//            progress.style.width = progressHeight + "%";
+            progress.style.left = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>

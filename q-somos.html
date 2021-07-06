@@ -1,0 +1,70 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!--Tag <link> para chamada de CSS externo-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--Tag <link> para chamada de fonte externa do Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Inicio | Quem somos</title>
+</head>
+<body vlink="#00008B" alink="#87CEEB" link="#FFFF00">
+    <header>
+        <img class="logo" src="imagens/logo.png">
+        <img class="logo2" src="imagens/astro2.jpg">
+        
+        
+        <div id="progress-bar"><img src="imagens/astro.png" class="aste"></div>
+        <div class="menu">
+            <center><a href="index.html" class="destaque">Inicio</a></center>
+            <center><a class="destaque">Quem Somos</a></center>
+            <center><a href="galer.html" class="destaque">Galeria</a></center>
+            <center><a href="contat.html" class="destaque">Contato</a></center>
+        </div>
+        
+    </header>
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/"><img class="ico-rede" src="imagens/ico-fac.bmp"></a>
+            <a href="#"><img class="ico-rede" src="imagens/ico-Wts.bmp"></a>
+            <a href="https://www.instagram.com/?hl=pt-br"><img class="ico-rede" src="imagens/ico-ins.bmp"></a>
+            <a href="https://twitter.com/login?lang=pt"><img class="ico-rede" src="imagens/ico-tiw.bmp"></a>
+        </div>
+    <div class="conteudo">
+        <center><h1>Quem Somos</h1></center>
+        <div style="width: 90%;"><p>O Início de Tudo
+        O Céu a Vista foi criado por Astronomo Anonimo, apaixonado, aficionado e fanático por astronomia, astrofísica, astronáutica, geofísica e ciências correlacionadas. Essa paixão nasceu em 1985 com a passagem do Cometa Halley nascendo daí a vontade de compartilhar e de divulgar as notícias e as descobertas ligadas às ciências espaciais.</p>
+        <p>
+        Em meados da década de 1990, em uma época sem internet, e sem meios de comunicação em massa, Anonimo já se envolvia com o estudo astronômico e com a vontade de espalhar a palavra científica, por meio do Boletim Astronômico Aldebaran que era datilografado e enviado via correios para um grupo restrito, porém especializado de pessoas, grupos astronômicos, observatórios, planetários e demais interessados.
+        </p><p>
+        Ajudando a Divulgação Científica no Brasil.
+        </p><p style="padding-right: 40px;">
+        Muitos anos depois, já com o advento da internet, Anonimo deu início ao compromisso de levar ao grande público a informação de forma correta e precisa, com as fontes bem documentadas, artigos científicos que embasam as notícias e opiniões firmes e validadas sobre os temas, e descobertas publicadas e divulgadas. Algo que, de fato, ocorre em todo o mundo, onde as principais fontes de pesquisas científicas são blogs e sites especializados.
+        </p><p style="padding-right: 40px;">
+        Depois de anos anonimo resolve mudar, dar uma nova cara para o blog, deixando mais profissional e assim surgiu Céu a Vista,  o nome é só uma homenagem todos apaixonados por astronomia.</p><p>
+
+        E isso é só o começo!</p></div>
+    </div>
+    <hr/>
+    <footer>
+        <img class="logo3" src="imagens/logo.png">
+        <div class="dir-res">© 2020 Céu a Vista |  Todos os direitos reservados.</div>
+        <div class="redes-sociais-footer">
+            <a href="https://www.facebook.com/"><img class="ico-rede2" src="imagens/ico-fac.bmp"></a>
+            <a href="#"><img class="ico-rede2" src="imagens/ico-Wts.bmp"></a>
+            <a href="https://www.instagram.com/?hl=pt-br"><img class="ico-rede2" src="imagens/ico-ins.bmp"></a>
+            <a href="https://twitter.com/login?lang=pt"><img class="ico-rede2" src="imagens/ico-tiw.bmp"></a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let progress = document.getElementById('progress-bar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+//            progress.style.width = progressHeight + "%";
+            progress.style.left = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>

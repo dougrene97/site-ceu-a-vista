@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!--Tag <link> para chamada de CSS externo-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--Tag <link> para chamada de fonte externa do Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Inicio | Galeria</title>
+</head>
+<body vlink="#00008B" alink="#87CEEB" link="#FFFF00">
+    <header>
+        <img class="logo" src="imagens/logo.png">
+        <img class="logo2" src="imagens/astro2.jpg">
+        
+        <div id="progress-bar"><img src="imagens/astro.png" class="aste"></div>
+        <div class="menu">
+            <center><a href="index.html" class="destaque">Inicio</a></center>
+            <center><a href="q-somos.html" class="destaque">Quem Somos</a></center>
+            <center><a class="destaque">Galeria</a></center>
+            <center><a href="contat.html" class="destaque">Contato</a></center>
+        </div>
+        
+    </header>
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/"><img class="ico-rede" src="imagens/ico-fac.bmp"></a>
+            <a href="#"><img class="ico-rede" src="imagens/ico-Wts.bmp"></a>
+            <a href="https://www.instagram.com/?hl=pt-br"><img class="ico-rede" src="imagens/ico-ins.bmp"></a>
+            <a href="https://twitter.com/login?lang=pt"><img class="ico-rede" src="imagens/ico-tiw.bmp"></a>
+        </div>
+    <div class="conteudo">
+        <div class="contgal"><img class="gal" src="imagens/mat1.png"></div><p>Astronautas na ISS Irão Receber Um Novo Banheiro</p>
+        <div class="contgal"><img class="gal" src="imagens/mat2.png"></div><p>Astrônomos Usam O VLBA E Fazem A Primeira Medida Direta de Distância Até Uma Magnetar</p>
+        <div class="contgal"><img class="gal" src="imagens/mat3.png"></div><p>O Sol Oficialmente Entrou Em Um Novo Ciclo de Atividade – Bem-Vindos Ao Ciclo 25</p>
+        <div class="contgal"><img class="gal" src="imagens/mat4.png"></div><p>Rússia Revela Imagens De Um Rebocador Espacial Nuclear</p>
+        <div class="contgal"><img class="gal" src="imagens/mat5.png"></div><p>O Véu de Cygnus – Surfando Na Borda Da Onda de Choque De Uma Supernova</p>
+        <div class="contgal"><img class="gal" src="imagens/mat6.png"></div><p>NGC 2442 – A Galáxia Em Forma de Gancho</p>
+        <div class="contgal"><img class="gal" src="imagens/mat7.png"></div><p>Superfície Congelada do Satélite de Europa Sofre Uma Grande Deriva Polar</p>
+        <div class="contgal"><img class="gal" src="imagens/mat8.png"></div><p>Astrônomos Descobrem Um Raro Netuno Quente Orbitando Uma Estrela Próxima</p>
+        <div class="contgal"><img class="gal" src="imagens/mat9.png"></div><p>Pela Primeira Vez Algoritmo de Machine Learning Confirma A Existência de 50 Novos Exoplanetas</p>
+    </div>
+    <hr/>
+    <footer>
+        <img class="logo3" src="imagens/logo.png">
+        <div class="dir-res">© 2020 Céu a Vista |  Todos os direitos reservados.</div>
+        <div class="redes-sociais-footer">
+            <a href="https://www.facebook.com/"><img class="ico-rede2" src="imagens/ico-fac.bmp"></a>
+            <a href="#"><img class="ico-rede2" src="imagens/ico-Wts.bmp"></a>
+            <a href="https://www.instagram.com/?hl=pt-br"><img class="ico-rede2" src="imagens/ico-ins.bmp"></a>
+            <a href="https://twitter.com/login?lang=pt"><img class="ico-rede2" src="imagens/ico-tiw.bmp"></a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let progress = document.getElementById('progress-bar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+//            progress.style.width = progressHeight + "%";
+            progress.style.left = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>
